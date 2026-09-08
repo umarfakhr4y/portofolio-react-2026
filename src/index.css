@@ -451,8 +451,8 @@ body {
 @media (max-width: 768px) {
   .about-text-card .glass-card {
     background: rgba(0, 0, 0, 0.6) !important;
-    backdrop-filter: blur(24px) !important;
     -webkit-backdrop-filter: blur(24px) !important;
+    backdrop-filter: blur(24px) !important;
     transform: none !important;
     isolation: auto !important;
     will-change: auto !important;
