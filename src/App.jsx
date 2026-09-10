@@ -87,7 +87,7 @@ function App() {
 
   return (
     <div className="app-wrapper">
-      <div 
+      <div
         style={{
           position: 'fixed',
           top: 0,
@@ -138,7 +138,7 @@ function App() {
             </motion.p>
             <motion.div variants={fadeIn} style={{ display: 'flex', gap: '1rem' }}>
               <button onClick={() => scrollTo('portfolio')} className="btn-primary">Lihat Karya Saya</button>
-              <a href="https://drive.google.com/file/d/12dSJg6R4z3KubqypIzAHbaCqV0IbH5Bt/view?usp=sharing" target="_blank" rel="noreferrer" className="btn-primary" style={{ background: 'var(--card-bg)', border: '1px solid var(--card-border)', boxShadow: 'none' }}>
+              <a href="https://drive.google.com/file/d/1gIBzCTFgFmIQkoPGCBsVIBOO-ObNuju7/view?usp=sharing" target="_blank" rel="noreferrer" className="btn-primary" style={{ background: 'var(--card-bg)', border: '1px solid var(--card-border)', boxShadow: 'none' }}>
                 <Download size={18} /> Resume
               </a>
             </motion.div>
@@ -172,24 +172,24 @@ function App() {
           <motion.div className="about-text-card" initial="hidden" whileInView="visible" viewport={{ once: false }} variants={fadeIn} style={{ gridColumn: '1 / -1', pointerEvents: 'auto' }}>
             <BorderGlow className="glass-card" glowColor="217 91 60" backgroundColor="rgba(255, 255, 255, 0.05)" colors={['#38bdf8', '#3b82f6', '#2563eb']} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%' }}>
               <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', fontSize: '1.1rem', lineHeight: '1.8' }}>
-              Saya adalah seorang Pengembang Web & Mobile yang berdedikasi, saat ini sedang menempuh pendidikan S1 Sistem Informasi di UNJ.
-              Perjalanan saya di industri teknologi didorong oleh semangat untuk menciptakan pengalaman digital yang menawan dan sangat fungsional.
-              Dengan keahlian yang mencakup pengembangan <i>frontend</i>, arsitektur <i>backend</i>, hingga desain grafis, saya mengerjakan setiap proyek dengan pola pikir holistik guna memastikan kualitas yang sempurna untuk kebutuhan bisnis modern.
-            </p>
-            <ul style={{ listStyle: 'none', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem', marginTop: '2rem' }}>
-              <li style={{ display: 'flex', flexDirection: 'column' }}>
-                <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '0.3rem' }}>Lokasi</span>
-                <strong style={{ fontSize: '1.1rem' }}>Jakarta & Subang, Indonesia</strong>
-              </li>
-              <li style={{ display: 'flex', flexDirection: 'column' }}>
-                <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '0.3rem' }}>Email</span>
-                <strong style={{ fontSize: '1.1rem' }}>umarfakhr4y@gmail.com</strong>
-              </li>
-              <li style={{ display: 'flex', flexDirection: 'column' }}>
-                <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '0.3rem' }}>Peran Saat Ini</span>
-                <strong style={{ fontSize: '1.1rem' }}>Freelancer</strong>
-              </li>
-            </ul>
+                Saya adalah seorang Pengembang Web & Mobile yang berdedikasi, saat ini sedang menempuh pendidikan S1 Sistem Informasi di UNJ.
+                Perjalanan saya di industri teknologi didorong oleh semangat untuk menciptakan pengalaman digital yang menawan dan sangat fungsional.
+                Dengan keahlian yang mencakup pengembangan <i>frontend</i>, arsitektur <i>backend</i>, hingga desain grafis, saya mengerjakan setiap proyek dengan pola pikir holistik guna memastikan kualitas yang sempurna untuk kebutuhan bisnis modern.
+              </p>
+              <ul style={{ listStyle: 'none', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem', marginTop: '2rem' }}>
+                <li style={{ display: 'flex', flexDirection: 'column' }}>
+                  <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '0.3rem' }}>Lokasi</span>
+                  <strong style={{ fontSize: '1.1rem' }}>Jakarta & Subang, Indonesia</strong>
+                </li>
+                <li style={{ display: 'flex', flexDirection: 'column' }}>
+                  <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '0.3rem' }}>Email</span>
+                  <strong style={{ fontSize: '1.1rem' }}>umarfakhr4y@gmail.com</strong>
+                </li>
+                <li style={{ display: 'flex', flexDirection: 'column' }}>
+                  <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem', marginBottom: '0.3rem' }}>Peran Saat Ini</span>
+                  <strong style={{ fontSize: '1.1rem' }}>Freelancer</strong>
+                </li>
+              </ul>
             </BorderGlow>
           </motion.div>
         </div>
@@ -336,7 +336,7 @@ function App() {
                   {selectedProject.gallery ? (
                     <>
                       <div style={{ overflow: 'hidden', borderRadius: '12px', width: '100%' }}>
-                        <motion.div 
+                        <motion.div
                           style={{ display: 'flex' }}
                           animate={{ x: `-${currentImageIndex * 100}%` }}
                           transition={{ type: "spring", stiffness: 300, damping: 30 }}
@@ -346,22 +346,22 @@ function App() {
                           ))}
                         </motion.div>
                       </div>
-                      
+
                       {selectedProject.gallery.length > 1 && (
                         <>
-                          <button 
+                          <button
                             onClick={(e) => { e.stopPropagation(); setCurrentImageIndex(prev => prev === 0 ? selectedProject.gallery.length - 1 : prev - 1); }}
                             style={{ position: 'absolute', top: '50%', left: '10px', transform: 'translateY(-50%)', background: 'rgba(0,0,0,0.6)', color: 'white', border: 'none', width: '35px', height: '35px', borderRadius: '50%', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 2 }}
                           >
                             &#10094;
                           </button>
-                          <button 
+                          <button
                             onClick={(e) => { e.stopPropagation(); setCurrentImageIndex(prev => prev === selectedProject.gallery.length - 1 ? 0 : prev + 1); }}
                             style={{ position: 'absolute', top: '50%', right: '10px', transform: 'translateY(-50%)', background: 'rgba(0,0,0,0.6)', color: 'white', border: 'none', width: '35px', height: '35px', borderRadius: '50%', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 2 }}
                           >
                             &#10095;
                           </button>
-                          
+
                           <div style={{ display: 'flex', justifyContent: 'center', gap: '8px', marginTop: '1rem' }}>
                             {selectedProject.gallery.map((_, idx) => (
                               <button
