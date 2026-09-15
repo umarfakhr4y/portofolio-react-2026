@@ -28,7 +28,7 @@ const projectsData = [
   {
     id: 'entin',
     title: "E'ntin",
-    description: "Aplikasi Kantin Online yang dibangun menggunakan Flutter.",
+    description: "Aplikasi Kantin Online yang dibangun untuk memudahkan proses pemesanan makanan di lingkup perkantoran maupun kampus. Menjadi solusi praktis yang mempertemukan pembeli dan penjual secara efisien.",
     image: "/images/new-arrival-1.jpg",
     gallery: [
       "/images/new-arrival-1.jpg",
@@ -41,7 +41,7 @@ const projectsData = [
   {
     id: 'kaufen',
     title: "Kaufen",
-    description: "Aplikasi Koperasi Online yang dibangun menggunakan Flutter",
+    description: "Sistem Manajemen Koperasi digital yang dirancang untuk mengelola berbagai operasional secara komprehensif. Menawarkan fitur pencatatan transaksi jual-beli, hingga pengelolaan alur simpan-pinjam dana secara sistematis dan efisien.",
     image: "/images/new-arrival-2.jpg",
     tags: ["Flutter", "Mobile", "Rest API", "Laravel"],
     github: "https://github.com/umarfakhr4y"
@@ -49,9 +49,29 @@ const projectsData = [
   {
     id: 'vocasia',
     title: "Vocasia",
-    description: "Aplikasi E-Learning yang dibangun menggunakan Flutter",
+    description: "Platform E-Learning interaktif yang memberikan kemudahan akses belajar tanpa batas ruang dan waktu. Terintegrasi dengan sistem pembelian kursus (Course Marketplace) yang memungkinkan pengguna untuk bertransaksi dan langsung mempelajari materi secara terstruktur.",
     image: "/images/new-arrival-3.jpg",
     tags: ["Flutter", "Mobile", "Rest API"],
+    github: "https://github.com/umarfakhr4y"
+  },
+  {
+    id: 'zemilan',
+    title: "Zemilan",
+    description: "Aplikasi E-Commerce / Online Shop khusus penjualan cemilan. Dibangun dengan framework Laravel dan terintegrasi langsung dengan payment gateway Midtrans untuk sistem pembayaran otomatis.",
+    image: "/images/app-4/coverzemilan.png",
+    gallery: [
+      "/images/app-4/coverzemilan.png",
+      "/images/app-4/zemilan1.png",
+      "/images/app-4/zemilan2.png",
+      "/images/app-4/zemilan3.png",
+      "/images/app-4/zemilan4.png",
+      "/images/app-4/zemilan5.png",
+      "/images/app-4/zemilan6.png",
+      "/images/app-4/zemilan7.png",
+      "/images/app-4/zemilan8.png",
+      "/images/app-4/zemilan9.png"
+    ],
+    tags: ["Laravel", "Web", "Midtrans", "E-Commerce"],
     github: "https://github.com/umarfakhr4y"
   }
 ];
@@ -200,7 +220,7 @@ function App() {
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: false, margin: "-100px" }} variants={fadeIn}>
           <h2 className="section-title">Tools & <span className="text-gradient">Tech Stack</span></h2>
           <p style={{ color: 'var(--text-muted)', marginBottom: '3rem', maxWidth: '600px' }}>
-            Saya menggunakan beragam tumpukan <i>tools</i> dan <i>framework</i> modern untuk mewujudkan ide menjadi kenyataan. Berikut adalah teknologi utama yang saya gunakan sehari-hari.
+            Saya menggunakan beragam tumpukan <i>tools</i> dan <i>framework</i> modern untuk mewujudkan ide menjadi kenyataan. Berikut adalah Tech Stack utama yang saya gunakan sehari-hari.
           </p>
         </motion.div>
 
@@ -242,8 +262,13 @@ function App() {
         </motion.div>
 
         <motion.div
-          className="bento-grid"
-          style={{ marginTop: '0' }}
+          style={{ 
+            marginTop: '0',
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            gap: '1.5rem'
+          }}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, margin: "-50px" }}
@@ -257,7 +282,12 @@ function App() {
                 setSelectedProject(project);
                 setCurrentImageIndex(0);
               }}
-              style={{ display: 'flex', height: '100%' }}
+              style={{ 
+                display: 'flex', 
+                height: '100%',
+                flex: '1 1 300px',
+                maxWidth: '380px'
+              }}
             >
               <BorderGlow
                 className="glass-card project-card"
@@ -391,7 +421,7 @@ function App() {
                   <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', fontSize: '1.1rem', lineHeight: '1.7' }}>{selectedProject.description}</p>
 
                   <div style={{ marginBottom: '2.5rem' }}>
-                    <h4 style={{ marginBottom: '1rem', fontSize: '1.1rem', color: 'white' }}>Teknologi:</h4>
+                    <h4 style={{ marginBottom: '1rem', fontSize: '1.1rem', color: 'white' }}>Tech Stack:</h4>
                     <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
                       {selectedProject.tags.map(tag => (
                         <span key={tag} className="skill-tag">{tag}</span>
