@@ -68,8 +68,7 @@ const projectsData = [
       "/images/app-4/zemilan5.png",
       "/images/app-4/zemilan6.png",
       "/images/app-4/zemilan7.png",
-      "/images/app-4/zemilan8.png",
-      "/images/app-4/zemilan9.png"
+      "/images/app-4/zemilan8.png"
     ],
     tags: ["Laravel", "Web", "Midtrans", "E-Commerce"],
     github: "https://github.com/umarfakhr4y"
@@ -262,7 +261,7 @@ function App() {
         </motion.div>
 
         <motion.div
-          style={{ 
+          style={{
             marginTop: '0',
             display: 'flex',
             flexWrap: 'wrap',
@@ -282,8 +281,8 @@ function App() {
                 setSelectedProject(project);
                 setCurrentImageIndex(0);
               }}
-              style={{ 
-                display: 'flex', 
+              style={{
+                display: 'flex',
                 height: '100%',
                 flex: '1 1 300px',
                 maxWidth: '380px'
