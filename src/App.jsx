@@ -72,6 +72,23 @@ const projectsData = [
     ],
     tags: ["Laravel", "Web", "Midtrans", "E-Commerce"],
     github: "https://github.com/umarfakhr4y"
+  },
+  {
+    id: 'sim-magang',
+    title: "Pengelolaan Program Magang",
+    description: "Solusi terintegrasi untuk mengelola, memantau, dan mengevaluasi aktivitas magang secara mudah, efektif, dan real-time. Dilengkapi fitur presensi berbasis GPS, pelaporan harian, serta pemantauan tugas mentor.",
+    image: "/images/new-arrival-5.jpg",
+    gallery: [
+      "/images/new-arrival-5.jpg",
+      "/images/app-5/skripsi1.png",
+      "/images/app-5/skripsi2.png",
+      "/images/app-5/skripsi3.png",
+      "/images/app-5/skripsi4.png",
+      "/images/app-5/skripsi5.png",
+      "/images/app-5/skripsi6.png"
+    ],
+    tags: ["Flutter", "Mobile", "GPS", "REST API"],
+    github: "https://github.com/umarfakhr4y"
   }
 ];
 
